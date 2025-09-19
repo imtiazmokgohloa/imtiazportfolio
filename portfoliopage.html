@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Imtiaz Mokgohloa<br> | Software Developer & Data Analyst</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    /* Reset and base */
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: #f0f0f0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+    a {
+      color: #ffdd57;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    a:hover {
+      color: #fff;
+    }
+
+    /* Container */
+    .container {
+      max-width: 900px;
+      background: rgba(255 255 255 / 0.1);
+      border-radius: 15px;
+      padding: 40px 50px;
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      width: 100%;
+    }
+
+    /* Header with profile & objective */
+    header {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .profile-pic {
+      flex-shrink: 0;
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      overflow: hidden;
+      box-shadow: 0 0 10px #ffdd57aa;
+      border: 3px solid #ffdd57;
+    }
+    .profile-pic img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .objective {
+      max-width: 650px;
+      font-size: 1.2rem;
+      line-height: 1.5;
+      color: #ffdd57;
+      font-weight: 600;
+    }
+
+    /* Animated job title */
+    .animated-title {
+      font-size: 1.8rem;
+      font-weight: 600;
+      text-align: left;
+      margin-bottom: 50px;
+      height: 40px;
+      overflow: hidden;
+      position: relative;
+      color: #fff;
+    }
+    .animated-title span {
+      position: absolute;
+      width: 100%;
+      animation: slideFade 8s infinite;
+      opacity: 0;
+    }
+    .animated-title span:nth-child(1) {
+      animation-delay: 0s;
+    }
+    .animated-title span:nth-child(2) {
+      animation-delay: 4s;
+    }
+
+    @keyframes slideFade {
+      0%, 20% {opacity: 0; transform: translateY(100%);}
+      30%, 70% {opacity: 1; transform: translateY(0);}
+      80%, 100% {opacity: 0; transform: translateY(-100%);}
+    }
+
+    /* Sections */
+    section {
+      margin-bottom: 50px;
+    }
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #ffdd57;
+      border-bottom: 2px solid #ffdd57;
+      padding-bottom: 5px;
+    }
+
+    /* Projects */
+    .projects-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .project {
+      background: rgba(255 255 255 / 0.15);
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(255, 221, 87, 0.2);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    .project:hover {
+      transform: translateY(-5px);
+      background: rgba(255 255 255 / 0.3);
+      box-shadow: 0 8px 20px rgba(255, 221, 87, 0.4);
+    }
+    .project h3 {
+      margin-bottom: 8px;
+      font-weight: 700;
+    }
+    .project p {
+      color: #fff;
+      font-weight: 400;
+      font-size: 1rem;
+    }
+
+    /* Skills */
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .skill {
+      background: #ffdd57;
+      color: #1e3c72;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-weight: 600;
+      user-select: none;
+      box-shadow: 0 4px 8px #ffdd57aa;
+      transition: background 0.3s ease;
+    }
+    .skill:hover {
+      background: #f7c93d;
+      box-shadow: 0 6px 12px #f7c93dcc;
+    }
+
+    /* Contact */
+    .contact-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      font-size: 1.1rem;
+      color: #fff;
+    }
+    .contact-list a {
+      font-weight: 600;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #bbb;
+      margin-top: 40px;
+      user-select: none;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+      .objective {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <header>
+      <div class="profile-pic">
+        <img src="C:\Users\ICT_User21.ATS-HO\Desktop\portfolio\Media (1).jpg" alt="Your Name Profile Picture" />
+      </div>
+      <div class="objective">
+        <h2>Imtiaz Mokgohloa</h2>
+        <p style="color:black; font-size:18px; animation:fadeInOut 4s infinite;">I don't have to be formal, just knowledgeable.</p>
+<style>
+@keyframes fadeInOut {
+  0%,100% {opacity:0;}
+  25%,75% {opacity:1;}
+}
+</style>
+
+        <p>I am an adaptable, driven, and forward-thinking Java developer with combined strengths in Information Technology and a unique blend of financial systems. I am committed to leveraging technical proficiency and business acumen to support innovative, real-world applications and creating software that works as smart as it runs.
+        </p>
+      </div>
+    </header>
+
+    <div class="animated-title">
+      <span>Software Developer</span>
+      <span>Data Analyst</span>
+    </div>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects-list">
+        <div class="project" onclick="window.open('https://imtiazmokgohloa.github.io/lekgaushuttlers/')">
+          <h3>Lekgau Shuttles</h3>
+          <p>A webpage to ask for quotation that provides feedback and book for a transport service from Lekgau Shuttles.</p>
+        </div>
+        <div class="project" onclick="window.open('https://imtiazmokgohloa.github.io/EA3DHPD-website/')">
+          <h3>Ezekiel's Architects & 3D House Plan Design</h3>
+          <p>A user friendly webpage for customers to view houseplans and communicate with the architecture if they got any interest in rentering their services .</p>
+        </div>
+        <div class="project" onclick="window.open('https://github.com/yourusername/stock-predictor', '_blank')">
+          <h3>oncoming</h3>
+          <p>oncoming java project.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-list">
+        <div class="skill">VB.NET</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">SQL</div>
+        <div class="skill">Excel</div>
+        <div class="skill">Java</div>
+        <div class="skill">Microsoft Office</div>
+        <div class="skill"> Cisco Packet Tracer</div>
+        <div class="skill">Power BI</div>
+        <div class="skill">Sage Pastel Accounting</div>
+      </div>
+    </section>
+    <section id="education">
+      <h2>Education</h2>
+      <p>
+        <a href="education.html" target="_blank" style="color:#ffdd57; font-weight:600; text-decoration:underline;">View detailed education background &raquo;</a>
+      </p>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="contact-list">
+        <div>Email: <a href="mailto:mokgohloail897@gmail.com">mokgohloail897@gmail.com</a></div>
+         <div>Phone: <a href="tel:+27640107069">064 010 7069</a></div>
+        <div>GitHub: <a href="https://github.com/imtiazmokgohloa" target="_blank">github.com/imtiazmokgohloa</a></div>
+        <div>LinkedIn: <a href="https://www.linkedin.com/in/imtiaz-mokgohloa" target="_blank">linkedin.com/in/imtiaz-mokgohloa</a></div>
+        <div>Resume: <a href="C:\Users\ICT_User21.ATS-HO\Desktop\portfolio\Imtiaz_Mokgohloa_Updated_v2.pdf" download>📄 View & Download Imtiaz Mokgohloa Resume here</a></div>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    &copy; 2025 Imtiaz Mokgohloa. All rights reserved.
+  </footer>
+
+</body>
+</html>
